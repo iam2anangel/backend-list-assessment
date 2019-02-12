@@ -31,7 +31,7 @@ def match_ends(words):
         if len(word) > 1 and word[0] == word[-1]:
             amt += 1
 
-        return amt
+    return amt
 
 
 # B. front_x
