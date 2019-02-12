@@ -18,11 +18,17 @@
 
 
 def remove_adjacent(nums):
-    list = []
-    for num in nums:
-        if len(list) == 0 or num != list[-1]:
-            list.append(nums)
-    return list
+    i = 1
+    while i < len(nums):
+        if nums[i] == nums[i-1]:
+            nums.pop(i)
+            i -= 1
+        i += 1
+    return nums
+    # for num in nums:
+    #     if len(list) == 0 or num != list[-1]:
+    #         list.append(nums)
+    # return list
 
 
 # E. Given two lists sorted in increasing order, create and return a merged
